@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+#canvas1 {
+    background: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#musicButton {
+    position: absolute;
+    width: 40px; 
+    height: 40px; 
+    font-size: 25px; 
+    padding: 0px; 
+    right: 20px;
+    bottom: 100px;
+}
+
+#backgroundImage, #spoon, #spoon_hitbox, #water {
+    display: none;
+}
+
+#check, #cup0, #cup1, #cup2, #cup3, #bubble_blue_full, #bubble_orange_full, #bubble_pink_full, #bubble_purple_full, #bubble_blue_mushy, #bubble_orange_mushy, #bubble_pink_mushy, #bubble_purple_mushy, #bubble_blue_broken, #bubble_orange_broken, #bubble_pink_broken, #bubble_purple_broken {
+    display: none;
+    z-index: 2; 
+}
+
