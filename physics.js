@@ -31,7 +31,7 @@ function apply_gravity(object) {
 
 // Return if a bubble is touching the spoon hitbox
 function check_spoon(object, spoon) {
-    hitbox_leniance = 30;
+    hitbox_leniance = 50;
 
     spoonx = spoon.x + spoon.width/2;
     spoony = spoon.y + spoon.height/2;

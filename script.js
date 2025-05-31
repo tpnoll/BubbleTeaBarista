@@ -99,8 +99,10 @@ window.addEventListener('load', function() {
                 // Only update if the mouse is being held down
                 const rect = canvas.getBoundingClientRect();
                 this.mouseDown = e.buttons;
-                this.mouseLocation[0] = e.clientX - rect.left;
-                this.mouseLocation[1] = e.clientY - rect.top;
+                //this.mouseLocation[0] = e.clientX - rect.left;
+                //this.mouseLocation[1] = e.clientY - rect.top;
+                this.mouseLocation[0] = (e.clientX * (canvas.width/(rect.right - rect.left)) - rect.left * (canvas.height/(rect.bottom - rect.top)));
+                this.mouseLocation[1] = (e.clientY * (canvas.height/(rect.bottom - rect.top)) - rect.top * (canvas.height/(rect.bottom - rect.top)));
             });
 
             // Event listeners for touchscreen
